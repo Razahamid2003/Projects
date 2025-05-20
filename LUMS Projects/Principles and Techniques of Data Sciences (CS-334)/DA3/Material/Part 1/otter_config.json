@@ -1,0 +1,18 @@
+{
+    "tests": {
+        "test_q2_1": 2,
+        "test_q2_2": 2,
+        "test_q3a": 3,
+        "test_q3b": 3,
+        "test_q4a": 4,
+        "test_q4b": 4,
+        "test_q5": 5,
+        "test_q6": 6
+    },
+    "generate_pdf": false,
+    "seed": 42,
+    "show_feedback": true,
+    "variables": {
+        "allowed_globals": ["pre_treatment", "post_treatment", "ate_list", "data","ATE"]
+    }
+}
