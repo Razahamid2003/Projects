@@ -1,0 +1,9 @@
+8
+example.com/about/team
+example.com/services/consulting
+example.com/products/software
+example.com/products/widgets
+educateweb.com/academy/courses/create
+educateweb.com/academy/tutorials
+globalconnect.com/customers/worldwide
+connectsite.com/contact/office

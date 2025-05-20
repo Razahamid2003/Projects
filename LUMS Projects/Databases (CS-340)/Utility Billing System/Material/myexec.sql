@@ -1,0 +1,13 @@
+@schema/UtilitySchema;
+@populate/popPaymentMethods;
+@populate/popConType;
+@populate/popDivInfo;
+@populate/popCustomer;
+@populate/popConnection;
+@populate/popTariff;
+@populate/popTaxRates;
+@populate/popReadings;
+@populate/popSubsidy;
+@populate/popBill;
+@populate/pop_PaymentDetails;
+commit;

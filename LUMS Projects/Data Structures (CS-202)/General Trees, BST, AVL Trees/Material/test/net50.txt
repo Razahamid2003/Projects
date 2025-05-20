@@ -1,0 +1,13 @@
+12
+techsphere.net/data/analysis/report
+techsphere.net/data/analysis/tools
+techsphere.net/software/development/ai
+cinespot.net/reviews/latest/films
+cinespot.net/movies/genre/drama
+cinespot.net/movies/genre/action
+traveltrove.net/plans/adventure/hiking
+traveltrove.net/plans/adventure/skiing
+traveltrove.net/guides/city/paris
+greenearth.net/environment/recycle/glass
+greenearth.net/environment/recycle/paper
+greenearth.net/sustainability/energy/solar

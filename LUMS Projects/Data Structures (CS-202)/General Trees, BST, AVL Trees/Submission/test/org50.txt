@@ -1,0 +1,7 @@
+6
+medicenter.org/health/vitals/checkup
+medicenter.org/health/vitals/monitor
+medicenter.org/health/nutrition/diet
+gourmetguide.org/recipes/french/pastry
+gourmetguide.org/recipes/italian/pasta
+gourmetguide.org/recipes/italian/pizza

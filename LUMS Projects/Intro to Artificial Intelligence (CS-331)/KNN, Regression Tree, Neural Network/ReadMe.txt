@@ -1,0 +1,1 @@
+This project was conducted with another student, acting as my partner.

@@ -1,0 +1,10 @@
+name: AI_env
+dependencies:
+  - python>=3.11
+  - pip
+  - pip:
+    - ipykernel
+    - numpy
+    - pandas
+    - matplotlib
+    - scikit-learn

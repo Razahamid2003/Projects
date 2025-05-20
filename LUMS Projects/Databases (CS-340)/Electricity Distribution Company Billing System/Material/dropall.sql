@@ -1,0 +1,15 @@
+DROP TABLE Subsidy;
+DROP TABLE SubsidyProvider;
+DROP TABLE PaymentDetails;
+DROP TABLE PaymentMethods;
+DROP TABLE BillAdjustments;
+DROP TABLE Bill;
+DROP TABLE MeterReadings; 
+DROP TABLE Connections;
+DROP TABLE Tariff;
+DROP TABLE Customers; 
+DROP TABLE TaxRates;
+DROP TABLE FIXEDCHARGES;
+DROP TABLE TaxAuthority;
+DROP TABLE ConnectionTypes;
+DROP TABLE DivInfo;
