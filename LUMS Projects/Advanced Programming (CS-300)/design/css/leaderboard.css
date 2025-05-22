@@ -1,0 +1,32 @@
+
+/* leaderboard.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body {
+  font-family:'Roboto',sans-serif;
+  background:linear-gradient(135deg,#6a11cb,#2575fc);
+  background-size:400% 400%;
+  animation:gradientBG 15s ease infinite;
+  color:#fff;min-height:100vh;
+}
+@keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:.75rem 2rem;background:rgba(0,0,0,0.7);border-bottom:2px solid #fff}
+.nav-logo{font-family:'Press Start 2P',cursive;font-size:1rem;color:#fff;text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.coins{font-size:.9rem}
+.profile-dropdown{position:relative;display:flex;align-items:center;cursor:pointer}
+.profile-pic{width:32px;height:32px;border-radius:50%;margin-right:.5rem}
+.username{font-size:.9rem}
+.profile-dropdown:hover .dropdown-menu{opacity:1;visibility:visible}
+.dropdown-menu{position:absolute;top:100%;right:0;background:rgba(0,0,0,0.9);border:1px solid #fff;border-radius:6px;opacity:0;visibility:hidden;transition:opacity .2s}
+.dropdown-menu a{display:block;padding:.5rem 1rem;color:#fff;text-decoration:none;font-size:.85rem}
+.dropdown-menu a:hover{background:rgba(255,255,255,0.1)}
+
+.board-container{text-align:center;padding:3rem 2rem}
+.board-title{font-family:'Press Start 2P',cursive;font-size:1.5rem;margin-bottom:1.5rem;text-shadow:2px 2px 4px rgba(0,0,0,.7)}
+.search-box{padding:.6rem 1rem;border:none;border-radius:8px;width:250px;margin-bottom:1.5rem;font-size:.9rem}
+.board-table{width:90%;max-width:600px;margin:0 auto;border-collapse:collapse}
+.board-table th, .board-table td{padding:.75rem 1rem;border:2px solid #fff;font-size:.9rem}
+.board-table th{background:rgba(0,0,0,0.6)}
+.board-table tr:nth-child(even){background:rgba(255,255,255,0.1)}
+.board-table tr:hover{background:rgba(255,255,255,0.2)}

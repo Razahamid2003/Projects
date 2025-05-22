@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matchmaking | ColorGrid</title>
+    <link rel="stylesheet" href="../css/waiting.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="./home.html" class="nav-logo">🎨 ColorGrid</a>
+      <div class="nav-right">
+        <span class="coins">💰 <span id="coinBalance">1000</span></span>
+        <div class="profile-dropdown">
+          <img
+            src="https://th.bing.com/th/id/OIP.eMLmzmhAqRMxUZad3zXE5QHaHa?rs=1&pid=ImgDetMain"
+            alt="Profile"
+            class="profile-pic"
+          />
+          <span class="username">Player1</span>
+          <div class="dropdown-menu">
+            <a href="./update-profile.html">Update Profile</a>
+            <a href="./welcome.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="waiting-container">
+      <h1 class="waiting-title">Waiting for Opponent…</h1>
+      <p class="waiting-subtitle">Matchmaking in progress</p>
+      <a href="./home.html"
+        ><button id="cancelBtn" class="btn btn-secondary">Cancel</button></a
+      >
+    </main>
+  </body>
+</html>

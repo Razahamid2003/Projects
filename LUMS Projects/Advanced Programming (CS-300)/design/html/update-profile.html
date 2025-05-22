@@ -1,0 +1,41 @@
+<!-- update-profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Update Profile | ColorGrid</title>
+  <link rel="stylesheet" href="../css/update-profile.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <a href="./home.html" class="nav-logo">🎨 ColorGrid</a>
+    <div class="nav-right">
+      <span class="coins">💰 <span id="coinBalance">1000</span></span>
+      <div class="profile-dropdown">
+        <img src="https://th.bing.com/th/id/OIP.eMLmzmhAqRMxUZad3zXE5QHaHa?rs=1&pid=ImgDetMain" alt="Profile" class="profile-pic"/>
+        <span class="username">You</span>
+        <div class="dropdown-menu">
+          <a href="./welcome.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="update-container">
+    <h1 class="update-title">Update Profile</h1>
+    <form class="update-form" action="/update-profile" method="POST">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" required/>
+
+      <label for="password">New Password</label>
+      <input id="password" name="password" type="password"/>
+
+      <label for="profilePic">Profile Picture URL</label>
+      <input id="profilePic" name="profilePic" type="url"/>
+
+      <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+  </main>
+</body>
+</html>

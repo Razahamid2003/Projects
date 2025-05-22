@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | ColorGrid</title>
+  <link rel="stylesheet" href="../css/login.css" />
+</head>
+<body>
+  <main class="auth-container">
+    <h1 class="auth-title">Login</h1>
+    <form class="auth-form" action="/login" method="POST">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" required />
+      
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required />
+      
+      <button type="submit" class="btn btn-primary">Log In</button>
+    </form>
+    <p class="auth-footer">
+      Don’t have an account? <a href="./signup.html">Sign Up</a>
+    </p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game | ColorGrid</title>
+  <link rel="stylesheet" href="../css/gameplay.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <a href="./home.html" class="nav-logo">🎨 ColorGrid</a>
+    <div class="nav-right">
+      <span class="coins">💰 <span id="coinBalance">1200</span></span>
+      <div class="profile-dropdown">
+        <img src="https://th.bing.com/th/id/OIP.eMLmzmhAqRMxUZad3zXE5QHaHa?rs=1&pid=ImgDetMain" alt="You" class="profile-pic"/>
+        <span class="username">You</span>
+        <div class="dropdown-menu">
+          <a href="./update-profile.html">Update Profile</a>
+          <a href="./welcome.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="game-container">
+    <div class="players-header">
+      <div class="player">
+        <img src="https://th.bing.com/th/id/OIP.eMLmzmhAqRMxUZad3zXE5QHaHa?rs=1&pid=ImgDetMain" alt="You" style="width: 100px; height: 100px;"/>
+        <span>You</span>
+      </div>
+      <span class="vs">VS</span>
+      <div class="player">
+        <img src="https://th.bing.com/th/id/OIP.eMLmzmhAqRMxUZad3zXE5QHaHa?rs=1&pid=ImgDetMain" alt="Opponent" style="width: 100px; height: 100px;"/>
+        <span>Opponent</span>
+      </div>
+    </div>
+
+    <div class="grid"></div>
+
+    <div class="status-area">
+      <p id="status">Status: <span>Your Turn</span></p>
+      <button id="forfeitBtn" class="btn btn-secondary">Forfeit</button>
+      <button id="playAgainBtn" class="btn btn-primary hidden">Play Again</button>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.querySelector('.grid');
+      // create 5x5 = 25 cells
+      for (let i = 0; i < 25; i++) {
+        const cell = document.createElement('div');
+        cell.classList.add('cell');
+        // choose red or blue at random
+        const color = Math.random() < 0.5
+          ? 'rgb(255, 69, 58)'   // a nice red
+          : 'rgb(0, 122, 255)';  // a nice blue
+        cell.style.backgroundColor = color;
+        grid.appendChild(cell);
+      }
+    });
+  </script>
+</body>
+</html>

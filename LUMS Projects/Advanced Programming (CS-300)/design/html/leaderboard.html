@@ -1,0 +1,47 @@
+<!-- leaderboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leaderboard | ColorGrid</title>
+  <link rel="stylesheet" href="../css/leaderboard.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <a href="./home.html" class="nav-logo">🎨 ColorGrid</a>
+    <div class="nav-right">
+      <span class="coins">💰 <span id="coinBalance">1000</span></span>
+      <div class="profile-dropdown">
+        <img src="https://th.bing.com/th/id/OIP.eMLmzmhAqRMxUZad3zXE5QHaHa?rs=1&pid=ImgDetMain" alt="You" class="profile-pic"/>
+        <span class="username">You</span>
+        <div class="dropdown-menu">
+          <a href="./update-profile.html">Update Profile</a>
+          <a href="./welcome.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="board-container">
+    <h1 class="board-title">Leaderboard</h1>
+    <input id="searchInput" type="text" placeholder="Search by username…" class="search-box"/>
+    <table class="board-table">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Wins</th>
+          <th>Losses</th>
+          <th>Draws</th>
+          <th>Coins</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Charlie</td><td>4</td><td>3</td><td>0</td><td>1200</td></tr>
+        <tr><td>Bob</td><td>2</td><td>3</td><td>1</td><td> 800</td></tr>
+        <!-- more rows -->
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!-- history-detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game #101 | ColorGrid</title>
+  <link rel="stylesheet" href="../css/history-detail.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <a href="./home.html" class="nav-logo">🎨 ColorGrid</a>
+    <div class="nav-right">
+      <span class="coins">💰 <span id="coinBalance">1100</span></span>
+      <div class="profile-dropdown">
+        <img src="https://th.bing.com/th/id/OIP.eMLmzmhAqRMxUZad3zXE5QHaHa?rs=1&pid=ImgDetMain" alt="You" class="profile-pic"/>
+        <span class="username">You</span>
+        <div class="dropdown-menu">
+          <a href="./update-profile.html">Update Profile</a>
+          <a href="./welcome.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="snapshot-container">
+    <h1 class="snapshot-title">
+      Game #101 Result: <span class="result won">You Won!</span>
+    </h1>
+    <div class="grid"></div>
+    <a href="./history.html" class="btn btn-secondary">Back to History</a>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.querySelector('.grid');
+      // Build a 5x5 grid of random red/blue cells
+      for (let i = 0; i < 25; i++) {
+        const cell = document.createElement('div');
+        cell.classList.add('cell');
+        // Pick a random color
+        const color = Math.random() < 0.5
+          ? 'rgb(255, 69, 58)'   // red
+          : 'rgb(0, 122, 255)';  // blue
+        cell.style.backgroundColor = color;
+        grid.appendChild(cell);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* history-detail.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body {
+  font-family:'Roboto',sans-serif;
+  background:linear-gradient(135deg,#2575fc,#6a11cb);
+  background-size:400% 400%;
+  animation:gradientBG 15s ease infinite;
+  color:#fff;min-height:100vh;
+}
+@keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:.75rem 2rem;background:rgba(0,0,0,0.7);border-bottom:2px solid #fff}
+.nav-logo{font-family:'Press Start 2P',cursive;font-size:1rem;color:#fff;text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.coins{font-size:.9rem}
+.profile-dropdown{position:relative;display:flex;align-items:center;cursor:pointer}
+.profile-pic{width:32px;height:32px;border-radius:50%;margin-right:.5rem}
+.username{font-size:.9rem}
+.profile-dropdown:hover .dropdown-menu{opacity:1;visibility:visible}
+.dropdown-menu{position:absolute;top:100%;right:0;background:rgba(0,0,0,0.9);border:1px solid #fff;border-radius:6px;opacity:0;visibility:hidden;transition:opacity .2s}
+.dropdown-menu a{display:block;padding:.5rem 1rem;color:#fff;text-decoration:none;font-size:.85rem}
+.dropdown-menu a:hover{background:rgba(255,255,255,0.1)}
+
+.snapshot-container{text-align:center;padding:3rem 2rem}
+.snapshot-title{font-family:'Press Start 2P',cursive;font-size:1.4rem;margin-bottom:1.5rem;text-shadow:2px 2px 4px rgba(0,0,0,.7)}
+.result.won{color:#4caf50}
+.result.lost{color:#f44336}
+.result.draw{color:#ffeb3b}
+
+.grid{display:grid;grid-template-columns:repeat(5,50px);grid-template-rows:repeat(5,50px);gap:4px;justify-content:center;margin-bottom:2rem}
+.cell{width:50px;height:50px;background:rgba(255,255,255,0.1);border:2px solid #fff;border-radius:4px}
+/* Example color classes:
+.cell.red { background: #ff4b2b; }
+.cell.blue { background: #00c6ff; } */
+
+.btn{padding:.6rem 1.2rem;border:none;border-radius:8px;font-weight:bold;cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn-secondary{background:linear-gradient(45deg,#00c6ff,#0072ff);color:#fff}
+.btn-secondary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.3)}

@@ -1,0 +1,30 @@
+/* matchfound.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body {
+  font-family:'Roboto',sans-serif;
+  background:linear-gradient(135deg,#6a11cb,#2575fc);
+  background-size:400% 400%;
+  animation:gradientBG 15s ease infinite;
+  color:#fff;min-height:100vh;
+}
+@keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:.75rem 2rem;background:rgba(0,0,0,0.7);border-bottom:2px solid #fff}
+.nav-logo{font-family:'Press Start 2P',cursive;font-size:1rem;color:#fff;text-decoration:none}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.coins{font-size:.9rem}
+.profile-dropdown{position:relative;display:flex;align-items:center;cursor:pointer}
+.profile-pic{width:32px;height:32px;border-radius:50%;margin-right:.5rem}
+.username{font-size:.9rem}
+.profile-dropdown:hover .dropdown-menu{opacity:1;visibility:visible}
+.dropdown-menu{position:absolute;top:100%;right:0;background:rgba(0,0,0,0.9);border:1px solid #fff;border-radius:6px;overflow:hidden;opacity:0;visibility:hidden;transition:opacity .2s}
+.dropdown-menu a{display:block;padding:.5rem 1rem;color:#fff;text-decoration:none;font-size:.85rem}
+.dropdown-menu a:hover{background:rgba(255,255,255,0.1)}
+
+.found-container{text-align:center;padding:5rem 2rem}
+.found-title{font-family:'Press Start 2P',cursive;font-size:1.6rem;margin-bottom:1.5rem;text-shadow:2px 2px 4px rgba(0,0,0,.7);animation:pulse 1.2s ease infinite alternate}
+@keyframes pulse{from{transform:scale(1)}to{transform:scale(1.03)}}
+.opponent-info{display:flex;flex-direction:column;align-items:center;gap:.75rem;margin-bottom:1.5rem}
+.opponent-info img{width:80px;height:80px;border-radius:50%;border:3px solid #fff}
+.opponent-name{font-size:1rem}
+.found-subtitle{font-size:.95rem;color:#ddd}
